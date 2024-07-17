@@ -1,1 +1,31 @@
+Given a positive integer, check whether it has alternating bits: namely, if two adjacent bits will always have different values.
 
+ 
+
+Example 1:
+
+Input: n = 5
+Output: true
+Explanation: The binary representation of 5 is: 101
+Example 2:
+
+Input: n = 7
+Output: false
+Explanation: The binary representation of 7 is: 111.
+Example 3:
+
+Input: n = 11
+Output: false
+Explanation: The binary representation of 11 is: 1011.
+
+
+Solution:
+
+Intuition
+First put the binary representation of the number into an array/ vector.
+Scan through the vector and do exor of all alternating elements,
+if the exor of two consecutive bits are 0 that means same number is coming twice, No point of going through remaining array else
+If exor is 1 in every case means every consecutive bits are different.
+Complexity
+Time complexity:O(log n)
+Space complexity:O(log n)
